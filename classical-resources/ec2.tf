@@ -4,6 +4,7 @@ locals {
   })
 }
 
+# Définition de l'EC2
 resource "aws_instance" "prod-5src2-gr3-cloudwatch-agent" {
   ami                         = data.aws_ami.cloudwatch-agent-server.id
   instance_type               = "t2.micro"
